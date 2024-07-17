@@ -1,0 +1,64 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #AAAAAA;
+}
+
+.Calculator {
+    
+    height: 500px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #071013;
+    gap: 20px;
+
+}
+.display {
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+
+    background-color: #DFE0E2;
+}
+button {
+    height: 60px;
+    width: 60px;
+    font-weight: bold;
+    border-radius: 7%;
+
+}
+
+.keypad {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin-right: 19px;
+}
+.grp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+}
+.sect1 {
+    display: flex;
+}
+.nums {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+#number-0 {
+    flex-grow: 1;
+} 
+.sect2 {
+    display: flex;
+    flex-direction: column;
+}
