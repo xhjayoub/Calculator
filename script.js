@@ -16,7 +16,7 @@ function operate(n1, op, n2) {
             return add(n1,n2);
         case '-':
             return subtract(n1,n2);
-        case '*':
+        case 'X':
             return multiply(n1,n2);
         case '/':
             return divide(n1,n2);
@@ -38,10 +38,13 @@ function clear() {
 function clearAll() {
     const d = document.querySelector(".display span");
     d.innerHTML = '';
+    num1 = '';
+    num2 = '';
+    op = '';
 }
-let num1;
-let op;
-let num2;
+let num1 = '';
+let op = '';
+let num2 = '';
 
 
 
@@ -58,3 +61,4 @@ clearBtn.addEventListener("click",clear);
 // Apply clearAll
 const clearAllBtn = document.querySelector("#clearAll");
 clearAllBtn.addEventListener("click",clearAll);
+
