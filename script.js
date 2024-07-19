@@ -74,7 +74,6 @@ clearAllBtn.addEventListener("click",clearAll);
 const operators = document.querySelectorAll(".op");
 operators.forEach((e) => e.addEventListener("click", (e) => {
     // Calculator Logic
-    console.log(e.target.innerHTML);
     const d = document.querySelector(".display span");
     if (num1 === '') {
         num1 = parseFloat(d.innerHTML);
@@ -88,7 +87,6 @@ operators.forEach((e) => e.addEventListener("click", (e) => {
         res = true;
     }
     op = e.target.innerHTML;
-    console.log(num1, op, num2);
 }));
 
 const eq = document.querySelector("#equal");
@@ -99,7 +97,6 @@ eq.addEventListener("click", () => {
     } else if (op !== ''){
         num2 = parseFloat(d.innerHTML);
         num1 = operate(num1, op, num2);
-        console.log(num1);
         d.innerHTML = num1;
         num2 = '';
         op = '';
