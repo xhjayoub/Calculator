@@ -26,6 +26,10 @@ function operate(n1, op, n2) {
 }
 function display(n) {
     const d = document.querySelector(".display span");
+    if (res === true) {
+        d.innerHTML = '';
+        res = false;
+    }
     d.innerHTML += n;
 }
 function clear() {
@@ -47,6 +51,7 @@ function clearAll() {
 let num1 = '';
 let op = '';
 let num2 = '';
+let res = false;
 
 
 
@@ -74,10 +79,12 @@ operators.forEach((e) => e.addEventListener("click", (e) => {
         num1 = parseFloat(d.innerHTML);
         d.innerHTML = '';
         op = e.target.innerHTML;
+        res = false;
     } else {
         num2 = parseFloat(d.innerHTML);
         num1 = operate(num1, op, num2);
         d.innerHTML = num1;
+        res = true;
     }
     op = e.target.innerHTML;
     console.log(num1, op, num2);
