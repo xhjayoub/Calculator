@@ -95,10 +95,14 @@ eq.addEventListener("click", () => {
     const d = document.querySelector(".display span");
     if (num1 === '') {
         d.innerHTML = 0;
-    } else {
+    } else if (op !== ''){
         num2 = parseFloat(d.innerHTML);
         num1 = operate(num1, op, num2);
+        console.log(num1);
         d.innerHTML = num1;
         num2 = '';
+        op = '';
+        num1 = '';
+        res = true;
     }
 })
