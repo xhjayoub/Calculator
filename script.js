@@ -20,6 +20,8 @@ function operate(n1, op, n2) {
             return multiply(n1,n2);
         case '/':
             return divide(n1,n2);
+        case '%':
+            return n1 % n2;
     }
 }
 function display(n) {
@@ -62,3 +64,9 @@ clearBtn.addEventListener("click",clear);
 const clearAllBtn = document.querySelector("#clearAll");
 clearAllBtn.addEventListener("click",clearAll);
 
+// Apply operators
+const operators = document.querySelectorAll(".op");
+operators.forEach((e) => e.addEventListener("click", (e) => {
+    // Calculator Logic
+    console.log(e.target.innerHTML);
+}));
