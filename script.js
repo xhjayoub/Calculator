@@ -47,6 +47,7 @@ function clearAll() {
     num1 = '';
     num2 = '';
     op = '';
+    res = false;
 }
 let num1 = '';
 let op = '';
