@@ -72,6 +72,7 @@ button {
     margin: 1px;
     border: none;
     color: black;
+    transition-duration: 0.4s;
 }
 .nums button {
     background-color: #edd2cb;
@@ -82,5 +83,7 @@ button {
 .sect1 button {
     
     background-color: #f55951;
-    
 }
+button:hover {
+    opacity: 90%;
+  }
