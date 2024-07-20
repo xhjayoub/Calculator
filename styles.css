@@ -3,7 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #AAAAAA;
+    background-color: #ffffff;
 }
 
 .Calculator {
@@ -14,8 +14,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #071013;
+    background-color: black;
     gap: 20px;
+    border-radius: 5%;
+    box-shadow: 10px 10px lightgray;
 
 }
 .display {
@@ -23,7 +25,9 @@ body {
     height: 30px;
     padding: 10px;
 
-    background-color: #DFE0E2;
+    background-color: #f1e8e6;
+    display: flex;
+    justify-content: flex-end;
 }
 button {
     height: 60px;
@@ -61,4 +65,22 @@ button {
 .sect2 {
     display: flex;
     flex-direction: column;
+}
+
+/* button styles */
+button {
+    margin: 1px;
+    border: none;
+    color: black;
+}
+.nums button {
+    background-color: #edd2cb;
+}
+.sect2 button {
+    background-color: #f5487f;
+}
+.sect1 button {
+    
+    background-color: #f55951;
+    
 }
